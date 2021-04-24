@@ -28,6 +28,19 @@
   color: #61dafb;
 }
 
+.nav ul {
+  padding-top: 50px;
+  display: flex;
+  width: 250px;
+  margin: 0 auto;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav li {
+  font-size: 18px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
