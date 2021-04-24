@@ -30,8 +30,8 @@ export class Reflux extends Component {
         <div className="counter-container">
           <p>Counter: {this.state.counter}</p>
           <div>
-            <button onClick={this.incrementCounter}>-</button>
-            <button onClick={this.decrementCounter}>+</button>
+            <button onClick={this.decrementCounter}>-</button>
+            <button onClick={this.incrementCounter}>+</button>
             <button onClick={this.setRandomCounterValue}>Set counter</button>
           </div>
         </div>
