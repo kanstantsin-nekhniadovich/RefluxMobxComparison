@@ -23,7 +23,6 @@ export class Reflux extends Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <>
         <h1>Reflux</h1>
