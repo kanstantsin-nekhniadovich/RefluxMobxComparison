@@ -2,6 +2,8 @@ import React from 'react';
 import { Component } from 'reflux';
 
 import { CouterStore } from './CounterStore';
+import { UserInfo } from './UserInfo';
+
 import * as actions from './actions';
 
 export class Reflux extends Component {
@@ -34,6 +36,7 @@ export class Reflux extends Component {
             <button onClick={this.setRandomCounterValue}>Set counter</button>
           </div>
         </div>
+        <UserInfo />
       </>
     );
   }
