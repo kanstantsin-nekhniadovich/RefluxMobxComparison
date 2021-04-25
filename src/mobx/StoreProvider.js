@@ -1,8 +1,12 @@
 import React from 'react';
 
 import { Counter } from './Counter';
+import { User } from './User';
 
-const store = new Counter();
+const store = {
+  counter: new Counter(),
+  user: new User(),
+}
 
 const Context = React.createContext();
 
