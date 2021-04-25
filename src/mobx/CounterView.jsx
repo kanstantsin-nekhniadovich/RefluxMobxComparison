@@ -5,23 +5,23 @@ import { withStore, useStore } from './StoreProvider';
 
 // use functional component approach
 export default observer(() => {
-  const store = useStore();
+  const { counter } = useStore();
 
   const decrementCounter = () => {
-    store.decrementCounter();
+    counter.decrementCounter();
   }
 
   const incrementCounter = () => {
-    store.incrementCounter();
+    counter.incrementCounter();
   }
 
   const setRandomCounterValue = () => {
-    store.setCounter(Math.floor(10 * Math.random()));
+    counter.setCounter(Math.floor(10 * Math.random()));
   }
 
   return (
     <div className="counter-container">
-      <p>Counter: {store.counter}</p>
+      <p>Counter: {counter.counter}</p>
       <div>
         <button onClick={decrementCounter}>-</button>
         <button onClick={incrementCounter}>+</button>
