@@ -13,10 +13,6 @@ class CounterView extends React.Component {
     this.setRandomCounterValue = this.setRandomCounterValue.bind(this);
   }
 
-  componentDidMount() {
-    console.log(this.props.store);
-  }
-
   decrementCounter() {
     this.props.store.decrementCounter();
   }
