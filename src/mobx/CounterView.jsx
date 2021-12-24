@@ -1,7 +1,7 @@
 import React from 'react';
-import { observer, inject } from 'mobx-react';
+import { observer } from 'mobx-react';
 
-import { withStore, useStore } from './StoreProvider';
+import { useStore } from './StoreProvider';
 
 // use functional component approach
 export default observer(() => {
